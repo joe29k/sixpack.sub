@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "sixpack-sub"
+version = "1.0.0"
+description = "A subpackage for sixpack demo namespaced package"
+authors = ["joe29k <52426773+joe29k@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "sixpack"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+sixpack = {git = "git@github.com:joe29k/sixpack.git", develop=true}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
